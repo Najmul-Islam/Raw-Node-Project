@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index",
+    "start": "set NODE_ENV=staging&&nodemon index",
+    "production": "set NODE_ENV=production&&nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Najmul Islam",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.7"
   }
 }
